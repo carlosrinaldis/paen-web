@@ -1,0 +1,54 @@
+@use '../variables' as *;
+
+body {
+    position: relative;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: $whiteAlt;
+}
+
+header, main, footer {
+    margin: auto;
+}
+
+/* MAYBE BASE */
+
+header {
+    background-color: red;
+
+    position: absolute;
+    top: 0px;
+    min-height: 50px;
+    min-width: 100%;
+    opacity: 0.3;
+}
+
+main {
+
+    min-height: calc(100vh - 50px);
+}
+
+footer {
+    background-color: green;
+    min-height: 50px;
+}
+
+/* HOME */
+
+#home {
+    section.hero {
+        background-color: blue;
+        min-height: 720px;
+
+        .ly-content.-img {
+            min-height: 720px;
+            background-image: url(/assets/02.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+    }
+
+
+}
+
